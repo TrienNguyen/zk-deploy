@@ -1,0 +1,36 @@
+<?page title="Bài 13"?>
+<window id="windowMaster" title="Điền số hạng còn thiếu" border="normal"
+	width="100%" apply="main.Unit13" style="background-color:#B9D3EE;">
+	<style>
+		.z-textbox[readonly]{ text-align:center; font-size: 70px;
+		font-weight: bold; background: #00FFCC}
+	</style>
+	<separator height="10px" />
+	<div width="100%">
+		<hlayout>
+			<button id="btnReset" label="Làm lại" style="align: right; font-size: 22px;" 
+				iconSclass="z-icon-repeat" />
+			<button id="btnMain" label="Trang chủ"
+				iconSclass="z-icon-home" style="align: right; font-size: 22px;"  />
+		</hlayout>
+	</div>
+	<separator height="10px" />
+	<div width="100%">
+		<div>
+			<hlayout>
+				<textbox id="txtTong" width="100px" height="100px"
+					readonly="true" />
+				<textbox width="100px" height="100px" readonly="true"
+					value="=" />
+				<textbox id="txtSoHang1" width="100px" height="100px"
+					style="text-align:center; font-size: 70px; font-weight: bold; background: #00FFCC"
+					focus="true" />
+				<textbox width="100px" height="100px" readonly="true"
+					value="+" />
+				<textbox id="txtSoHang2" width="100px" height="100px"
+					 readonly="true"/>
+			</hlayout>
+		</div>
+	</div>
+	<separator height="10px" />
+</window>

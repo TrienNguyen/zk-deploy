@@ -1,0 +1,47 @@
+<?page title="Bài 16"?>
+<window id="windowMaster" title="Hiệu 3 số trong phạm vi 10" apply="main.Unit16" 
+	border="normal" width="100%" style="background-color:#B9D3EE;">
+	<style>
+		.z-textbox[readonly]{ text-align:center; font-size: 50px;
+		font-weight: bold; background: #00FFCC}
+
+		.z-textbox{ text-align:center; font-size: 50px; font-weight:
+		bold; background: #00FFCC}
+
+		.label_cust{ text-align:center; font-size: 50px; font-weight:
+		bold; }
+
+		.button_cust{ text-align:center; font-size: 24px; font-weight:
+		bold;}
+
+	</style>
+	<separator height="10px" />
+	<hlayout>
+		<button id="btnReset" label="Làm lại" iconSclass="z-icon-repeat"
+			style="font-size: 22px;" />
+		<button id="btnMain" label="Trang chủ" iconSclass="z-icon-home"
+			style="align: right;font-size: 22px;" />
+		<button id="btnCheck" label="Kiểm tra" iconSclass="z-icon-check"
+			style="align: right;font-size: 22px;" />
+	</hlayout>
+	<separator height="10px" />
+	<div width="950px">
+		<div>
+			<hlayout>
+				<textbox id="txtSoHang0" width="70px" height="70px"/>
+				<textbox id="txtSoHang1" width="70px" height="70px"/>
+				<textbox id="txtSoHang2" width="70px" height="70px" />
+				<textbox id="txtSoHang3" width="70px" height="70px" />
+				<textbox id="txtSoHang4" width="70px" height="70px" />
+				<textbox id="txtSoHang5" width="70px" height="70px" />
+				<textbox id="txtSoHang6" width="70px" height="70px" />
+				<textbox id="txtSoHang7" width="70px" height="70px" />
+				<textbox id="txtSoHang8" width="70px" height="70px" />
+				<textbox id="txtSoHang9" width="70px" height="70px" />
+				<textbox id="txtSoHang10" width="70px" height="70px" />
+				<textbox id="txtSoHang11" width="70px" height="70px" />
+			</hlayout>
+		</div>
+	</div>
+	<separator height="10px" />
+</window>

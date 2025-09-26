@@ -1,0 +1,76 @@
+<?page title="Bài 9"?>
+<window id="windowMaster" title="Phép trừ" border="normal" width="100%"
+	apply="main.Unit9" style="background-color:#B9D3EE;">
+	<style>
+		.z-textbox[readonly]{ text-align:center; font-size: 70px;
+		font-weight: bold; background: #00FFCC}
+	</style>
+	
+	<div width="100%">
+		<hlayout>
+			<button id="btnReset" label="Làm lại" style="align: right; font-size: 22px;"  onClick="restart()"
+				iconSclass="z-icon-repeat" />
+			<button id="btnMain" label="Trang chủ"
+				iconSclass="z-icon-home" style="align: right; font-size: 22px;"  />
+		</hlayout>
+	</div>
+	<separator height="10px" />
+	
+	<groupbox mold="3d" closable="false">
+		<vlayout spacing="20px">
+			<label id="now" sclass="time" />
+			<label id="count" sclass="count" />
+			<progressmeter id="pm" value="0" width="450px" />
+		</vlayout>
+	</groupbox>
+
+	<separator height="10px" />
+	<div width="600px">
+		<div>
+			<hlayout>
+				<textbox id="txtSoBiTru" width="100px" height="100px"
+					readonly="true" />
+				<textbox width="100px" height="100px" readonly="true"
+					value="-" />
+				<textbox id="txtSoTru" width="100px" height="100px"
+					readonly="true" />
+				<textbox width="100px" height="100px" readonly="true"
+					value="=" />
+				<textbox id="txtHieu" width="100px" height="100px"
+					onOK="restart()"
+					style="text-align:center; font-size: 70px; font-weight: bold; background: #00FFCC"
+					focus="true" />
+			</hlayout>
+
+		</div>
+	</div>
+	<separator height="10px" />
+	
+	<div>
+		<image src="/image/amazing.png" id="imgA" visible="false" />
+		<image src="/image/try_again.png" id="imgT" visible="false" />
+	</div>
+
+	<style>
+		.count { font-weight: bold; font-size: 30px; } .time {
+		font-size: 30px; }
+	</style>
+	<zscript>
+	int countNum = 10;
+	void restart() {
+		countNum = 10;
+		pm.value = 0;
+		timer.start();
+	}
+</zscript>
+	<timer id="timer" delay="1000" repeats="true">
+		<attribute name="onTimer">
+		    if (countNum == 0) {
+		        timer.stop();
+		        return;
+		    }
+		    count.value = "Đếm: " + --countNum + "";
+		    pm.value = pm.value + 10;
+		</attribute>
+    </timer>
+</window>

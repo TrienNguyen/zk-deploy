@@ -1,0 +1,49 @@
+<?page title="Bài 3"?>
+<window id="windowMaster" title="Chọn số thích hợp" border="normal"
+	width="100%" apply="main.Unit3" style="background-color:#B9D3EE;">
+
+	<style>
+		.textbox_cust{ text-align:center; font-size: 50px; font-weight:
+		bold; }
+
+		.label_cust{ text-align:center; font-size: 35px; font-weight:
+		bold; }
+
+	</style>
+	<separator height="10px" />
+	<label value="0		1		2		3		4		5		6		7		8		9		10" 
+	sclass="label_cust" width="100%" />
+	<separator height="10px" />
+	<hlayout>
+		<radiogroup>
+			<radio id="rdChonSoLon" label="Chọn số lớn hơn." checked="true" />
+			<radio id="rdChonSoBe" label="Chọn số bé hơn." />
+		</radiogroup>
+	</hlayout>
+	<separator height="20px" />
+	<div width="200px" style="text-align:center;">
+		<div>
+			<button id="btnNum" label="3" sclass="textbox_cust"
+				width="90px" height="90px" />
+		</div>
+		<separator height="10px" />
+		<div>
+			<button id="btnNum0" label="2" sclass="textbox_cust"
+				width="90px" height="90px" />
+			<button id="btnNum1" label="5" sclass="textbox_cust"
+				width="90px" height="90px" />
+		</div>
+	</div>
+	<separator height="10px" />
+	<textbox width="350px" height="70px" id="txtSum" readonly="true"
+		style="font-size: 40px;font-weight:bold;background-color:#8DEEEE;"
+		value="=" />
+	<separator height="10px" />
+	<hlayout>
+		<button id="btnReset" label="Làm lại"
+			iconSclass="z-icon-repeat" />
+		<button id="btnMain" label="Trang chủ" iconSclass="z-icon-home"
+			style="align: right;" />
+	</hlayout>
+
+</window>

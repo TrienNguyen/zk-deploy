@@ -1,0 +1,65 @@
+<?page title="Bài 6"?>
+<window id="windowMaster" title="Sắp xếp thứ tự các số" border="normal"
+	width="100%" apply="main.Unit6" style="background-color:#B9D3EE;">
+	<style>
+		.textbox_cust{ text-align:center; font-size: 50px; font-weight:
+		bold; } .label_cust{ text-align:center; font-size: 35px;
+		font-weight: bold; }
+
+	</style>
+	<separator height="10px" />
+	<label value="0		1		2		3		4		5		6		7		8		9		10" sclass="label_cust"
+		width="100%" />
+	<separator height="10px" />
+	<hlayout>
+		<radiogroup>
+			<radio id="rdBeDenLon" label="Sắp xếp từ bé đến lớn"
+				checked="true" />
+			<radio id="rdLonDenBe" label="Sắp xếp từ lớn đến bé." />
+		</radiogroup>
+	</hlayout>
+	<separator height="20px" />
+	<div width="600px" style="text-align:center;">
+		<div>
+			<vlayout>
+				<hlayout>
+					<button id="btnNum0" label="3" sclass="textbox_cust"
+						width="80px" height="80px" />
+					<button id="btnNum1" label="2" sclass="textbox_cust"
+						width="80px" height="80px" />
+					<button id="btnNum2" label="5" sclass="textbox_cust"
+						width="80px" height="80px" />
+					<button id="btnNum3" label="5" sclass="textbox_cust"
+						width="80px" height="80px" />
+					<button id="btnNum4" label="5" sclass="textbox_cust"
+						width="80px" height="80px" />
+					<button id="btnNum5" label="5" sclass="textbox_cust"
+						width="80px" height="80px" />
+				</hlayout>
+				<hlayout>
+					<textbox id="txtNum0" width="80px" height="80px"
+						sclass="textbox_cust" />
+					<textbox id="txtNum1" width="80px" height="80px"
+						sclass="textbox_cust" />
+					<textbox id="txtNum2" width="80px" height="80px"
+						sclass="textbox_cust" />
+					<textbox id="txtNum3" width="80px" height="80px"
+						sclass="textbox_cust" />
+					<textbox id="txtNum4" width="80px" height="80px"
+						sclass="textbox_cust" />
+					<textbox id="txtNum5" width="80px" height="80px"
+						sclass="textbox_cust" />
+				</hlayout>
+			</vlayout>
+		</div>
+	</div>
+	<separator height="10px" />
+	<button id="btnKiemaTra" label="Kiểm tra" />
+	<separator height="10px" />
+	<hlayout>
+		<button id="btnReset" label="Làm lại"
+			iconSclass="z-icon-repeat" />
+		<button id="btnMain" label="Trang chủ" iconSclass="z-icon-home"
+			style="align: right;" />
+	</hlayout>
+</window>

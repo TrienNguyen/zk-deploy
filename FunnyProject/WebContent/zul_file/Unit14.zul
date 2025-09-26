@@ -1,0 +1,91 @@
+<?page title="Bài 14"?>
+<window id="windowMaster" title="Tổng 3 số trong phạm vi 10"
+	border="normal" width="100%" apply="main.Unit14"
+	style="background-color:#B9D3EE;">
+	<style>
+		.z-textbox[readonly]{ text-align:center; font-size: 70px;
+		font-weight: bold; background: #00FFCC}
+		
+		.z-textbox{ text-align:center; font-size: 70px;
+		font-weight: bold; background: #00FFCC}
+
+		.label_cust{ text-align:center; font-size: 50px; font-weight:
+		bold; }
+
+		.button_cust{ text-align:center; font-size: 24px; font-weight:
+		bold;}
+
+	</style>
+	<separator height="10px" />
+	<hlayout>
+		<button id="btnReset" label="Làm lại" iconSclass="z-icon-repeat"
+			style="font-size: 22px;" />
+		<button id="btnMain" label="Trang chủ" iconSclass="z-icon-home"
+			style="align: right;font-size: 22px;" />
+		<button id="btnCheck" label="Kiểm tra" iconSclass="z-icon-check"
+			style="align: right;font-size: 22px;" />
+	</hlayout>
+	<separator height="10px" />
+	<div width="750px">
+		<div>
+			<hlayout>
+				<textbox id="txtSoHang11" width="100px" height="100px"
+					readonly="true" />
+				<textbox width="100px" height="100px" readonly="true"
+					value="+" />
+				<textbox id="txtSoHang12" width="100px" height="100px"
+					readonly="true" />
+				<textbox width="100px" height="100px" readonly="true"
+					value="+" />
+				<textbox id="txtSoHang13" width="100px" height="100px" />
+				<textbox width="100px" height="100px" readonly="true"
+					value="=" />
+				<textbox id="txtTong1" width="100px" height="100px"
+					style="text-align:center; font-size: 70px; font-weight: bold; background: #00FFCC"
+					focus="true" />
+
+			</hlayout>
+			<separator height="20px"/>
+			<hlayout>
+				<textbox id="txtSoHang21" width="100px" height="100px"
+					readonly="true" />
+				<textbox width="100px" height="100px" readonly="true"
+					value="+" />
+				<textbox id="txtSoHang22" width="100px" height="100px"/>
+				<textbox width="100px" height="100px" readonly="true"
+					value="+" />
+				<textbox id="txtSoHang23" width="100px" height="100px"
+					readonly="true" />
+				<textbox width="100px" height="100px" readonly="true"
+					value="=" />
+				<textbox id="txtTong2" width="100px" height="100px"
+					style="text-align:center; font-size: 70px; font-weight: bold; background: #00FFCC"
+					focus="true" />
+
+			</hlayout>
+			<separator height="20px"/>
+			<hlayout>
+				<textbox id="txtSoHang31" width="100px" height="100px"/>
+				<textbox width="100px" height="100px" readonly="true"
+					value="+" />
+				<textbox id="txtSoHang32" width="100px" height="100px"
+					readonly="true" />
+				<textbox width="100px" height="100px" readonly="true"
+					value="+" />
+				<textbox id="txtSoHang33" width="100px" height="100px"
+					readonly="true" />
+				<textbox width="100px" height="100px" readonly="true"
+					value="=" />
+				<textbox id="txtTong3" width="100px" height="100px"
+					style="text-align:center; font-size: 70px; font-weight: bold; background: #00FFCC"
+					focus="true" />
+
+			</hlayout>
+		</div>
+	</div>
+	<separator height="10px" />
+<!-- 	<div> -->
+<!-- 		<image src="/image/amazing.png" id="imgA" visible="false" /> -->
+<!-- 		<image src="/image/try_again.png" id="imgT" visible="false" /> -->
+<!-- 	</div> -->
+</window>

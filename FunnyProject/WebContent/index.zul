@@ -1,0 +1,81 @@
+<?page title="Bé tập làm Toán"?>
+<window id="windowMaster" title="Bài tập làm quen cho bé"
+	border="normal" width="100%" apply="main.Main">
+	<style>
+		.label_cust{ text-align:center; font-size: 40px; font-weight:
+		bold; };
+
+	</style>
+	<div width="100%" style="display:grid; padding-top:20px;">
+		<grid>
+			<columns>
+				<column width="33%" />
+				<column width="33%" />
+				<column width="33%" />
+			</columns>
+			<rows style="text-align: center;">
+				<row>
+					<button id="btnUnit1" label="Bài 1"
+						iconSclass="z-icon-folder" width="100px" />
+					<button id="btnUnit2" label="Bài 2"
+						iconSclass="z-icon-folder" width="100px" />
+					<button id="btnUnit3" label="Bài 3"
+						iconSclass="z-icon-folder" width="100px" />
+				</row>
+				<row>
+					<button id="btnUnit4" label="Bài 4"
+						iconSclass="z-icon-folder" width="100px" />
+					<button id="btnUnit5" label="Bài 5"
+						iconSclass="z-icon-folder" width="100px" />
+					<button id="btnUnit6" label="Bài 6" tooltiptext="Sắp xếp thứ tự các số"
+						iconSclass="z-icon-folder" width="100px" />
+				</row>
+				<row>
+					<button id="btnUnit7" label="Bài 7" tooltiptext="Đếm số lớn hơn, bé hơn, bằng nhau"
+						iconSclass="z-icon-folder" width="100px" />
+					<button id="btnUnit8" label="Bài 8" tooltiptext="Tổng 2 số trong phạm vi 10"
+						iconSclass="z-icon-folder" width="100px" />
+					<button id="btnUnit9" label="Bài 9" tooltiptext="Phép trừ"
+						iconSclass="z-icon-folder" width="100px" />
+				</row>
+				
+				<row>
+					<button id="btnUnit10" label="Bài 10" tooltiptext="Điền số hạng còn thiếu"
+						iconSclass="z-icon-folder" width="100px" />
+					<button id="btnUnit11" label="Bài 11" tooltiptext="Tổng 3 số trong phạm vi 10"
+						iconSclass="z-icon-folder" width="100px" />
+					<button id="btnUnit12" label="Bài 12" tooltiptext="Tổng 2 số trong phạm vi từ 10 đén 15"
+						iconSclass="z-icon-folder" width="100px" />
+				</row>
+				
+				<row>
+					<button id="btnUnit13" label="Bài 13" tooltiptext="Điền số hạng còn thiếu"
+						iconSclass="z-icon-folder" width="100px" />
+					<button id="btnUnit14" label="Bài 14"
+						iconSclass="z-icon-folder" width="100px" />
+					<button id="btnUnit15" label="Bài 15"
+						iconSclass="z-icon-folder" width="100px" />
+				</row>
+				
+				<row>
+					<button id="btnUnit16" label="Bài 16" 
+						iconSclass="z-icon-folder" width="100px" />
+					<button id="btnUnit17" label="Bài 17"
+						iconSclass="z-icon-folder" width="100px" />
+					<button id="btnUnit18" label="Bài 18"
+						iconSclass="z-icon-folder" width="100px" />
+				</row>
+				
+				
+				
+				<row>
+					<button id="btnClock" label="Clock"
+						iconSclass="z-icon-folder" width="100px" />
+				
+				</row>
+				
+				
+			</rows>
+		</grid>
+	</div>
+</window>

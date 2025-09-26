@@ -1,0 +1,54 @@
+<?page title="Bài 2"?>
+<window id="windowMaster" title="Sô lớn hơn, bé hơn, bằng nhau!"
+	border="normal" width="100%" apply="main.Unit2"
+	style="background-color:#B9D3EE;">
+
+	<style>
+		.label_cust{ text-align:center; font-size: 35px; font-weight:
+		bold; } 
+		.label_cust1{ text-align:center; font-size: 25px;
+		font-weight: bold; }
+
+
+	</style>
+	<separator height="10px" />
+	<label value="0		1		2		3		4		5		6		7		8		9		10" 
+	sclass="label_cust" width="100%" />
+	<separator height="10px" />
+	<div width="100%" style="align:center;">
+		<vlayout>
+			<label value="So sánh 2 số, chọn dấu thích hợp:"
+				style="font-size: 20px; " width="100%" />
+			<separator height="10px" />
+			<hlayout>
+				<textbox width="70px" height="65px" id="txtNum1"
+					style="font-size: 48px;font-weight:bold;text-align:center;background-color:#CD853F;"
+					readonly="true" />
+				<button width="65px" height="65px" id="btnLonHon"
+					style="font-size: 48px;font-weight:bold;text-align:center;background-color:##FFCC99;" />
+				<button width="65px" height="65px" id="btnBang"
+					style="font-size: 48px;font-weight:bold;text-align:center;background-color:##FFCC99;" />
+				<button width="65px" height="65px" id="btnBeHon"
+					style="font-size: 48px;font-weight:bold;text-align:center;background-color:##FFCC99;" />
+				<textbox width="70px" height="65px" id="txtNum2"
+					readonly="true"
+					style="font-size: 48px;font-weight:bold;text-align:center;background-color:#CC99FF;" />
+
+			</hlayout>
+			<separator height="10px" />
+			<hlayout>
+				<textbox width="350px" height="70px" id="txtSum"
+					readonly="true"
+					style="font-size: 40px;font-weight:bold;background-color:#8DEEEE;"
+					value="=" />
+			</hlayout>
+			<separator height="10px" />
+			<hlayout>
+				<button id="btnReset" label="Làm lại"
+					iconSclass="z-icon-repeat" />
+				<button id="btnMain" label="Trang chủ"
+					iconSclass="z-icon-home" style="align: right;"/>
+			</hlayout>
+		</vlayout>
+	</div>
+</window>

@@ -1,0 +1,56 @@
+<?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" ?>
+<?link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet"?>
+<?page title="Bài 1"?>
+<window id="windowMaster" title="Số lớn hơn, bé hơn, bằng nhau!"
+	border="normal" width="100%" apply="main.Unit1"
+	style="background-color:#B9D3EE;">
+
+	<style>
+		.label_cust{ text-align:center; font-size: 40px; font-weight:
+		bold; }
+
+		.label_cust1{ text-align:center; font-size: 25px; font-weight:
+		bold; };
+
+	</style>
+
+	<separator height="10px" />
+	<label value="1		2		3		4		5		6		7		8		9		10" 
+	sclass="label_cust" width="100%" />
+	<separator height="10px" />
+	<hlayout>
+		<radiogroup>
+			<radio id="rdChonSoLon" label="Chọn số lớn hơn." checked="true" />
+			<radio id="rdChonSoBe" label="Chọn số bé hơn." />
+		</radiogroup>
+	</hlayout>
+	
+	<div width="100%" style="align:center;">
+		<vlayout>
+			<image src="/image/dauLonHon.png" id="imgDau"/>
+			<separator height="10px" />
+
+			<hlayout>
+				<button width="100px" height="70px" id="txtNum1"
+					style="font-size: 50px;font-weight:bold;text-align:center;background-color:#CD853F;" />
+				<button width="100px" height="70px" id="txtNum2"
+					style="font-size: 50px;font-weight:bold;text-align:center;background-color:#CC99FF;" />
+			</hlayout>
+
+			<separator height="10px" />
+			<hlayout>
+				<textbox width="350px" height="70px" id="txtSum"
+					readonly="true"
+					style="font-size: 40px;font-weight:bold;background-color:#8DEEEE;"
+					value="=" />
+			</hlayout>
+			<separator height="10px" />
+			<hlayout>
+				<button id="btnReset" label="Làm lại"
+					iconSclass="z-icon-repeat" style="text-align:center;" />
+				<button id="btnMain" label="Trang chủ"
+					iconSclass="z-icon-home" style="text-align:center;" />
+			</hlayout>
+		</vlayout>
+	</div>
+</window>

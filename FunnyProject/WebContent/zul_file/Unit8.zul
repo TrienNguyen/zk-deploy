@@ -1,0 +1,64 @@
+<?page title="Bài 8"?>
+<window id="windowMaster" title="Tổng 2 số trong phạm vi 10"
+	border="normal" width="100%" apply="main.Unit8"
+	style="background-color:#B9D3EE;">
+	<style>
+		.z-textbox[readonly]{ text-align:center; font-size: 40px;
+		font-weight: bold; background: #00FFCC}
+
+		.label_cust{ text-align:center; font-size: 35px; font-weight:
+		bold; }
+
+		.button_cust{ text-align:center; font-size: 30px; font-weight: bold;}
+
+	</style>
+	<separator height="10px" />
+	<label value="0		1		2		3		4		5		6		7		8		9		10" sclass="label_cust"
+		width="100%" />
+	<separator height="10px" />
+	<div width="350px" style="text-align:center;">
+		<div>
+			<hlayout>
+				<textbox id="txtSoHang1" width="65px" height="65px"
+					readonly="true" />
+				<textbox width="65px" height="65px" readonly="true"
+					value="+" />
+				<textbox id="txtSoHang2" width="65px" height="65px"
+					readonly="true" />
+				<textbox width="65px" height="65px" readonly="true"
+					value="=" />
+				<textbox id="txtTong" width="65px" height="65px"
+					readonly="true" />
+			</hlayout>
+		</div>
+	</div>
+	<separator height="10px" />
+	<div width="350px" style="text-align:center;">
+		<vlayout>
+			<hlayout>
+				<button width="60px" height="60px" label="1" sclass="button_cust" id="btn1"/>
+				<button width="60px" height="60px" label="2" sclass="button_cust" id="btn2"/>
+				<button width="60px" height="60px" label="3" sclass="button_cust" id="btn3"/>
+			</hlayout>
+			<hlayout>
+				<button width="60px" height="60px" label="4" sclass="button_cust" id="btn4"/>
+				<button width="60px" height="60px" label="5" sclass="button_cust" id="btn5"/>
+				<button width="60px" height="60px" label="6" sclass="button_cust" id="btn6"/>
+			</hlayout>
+			<hlayout>
+				<button width="60px" height="60px" label="7" sclass="button_cust" id="btn7"/>
+				<button width="60px" height="60px" label="8" sclass="button_cust" id="btn8"/>
+				<button width="60px" height="60px" label="9" sclass="button_cust" id="btn9"/>
+			</hlayout>
+		</vlayout>
+	</div>
+	<separator height="10px" />
+	<button id="btnKiemaTra" label="Kiểm tra" />
+	<separator height="10px" />
+	<hlayout>
+		<button id="btnReset" label="Làm lại"
+			iconSclass="z-icon-repeat" />
+		<button id="btnMain" label="Trang chủ" iconSclass="z-icon-home"
+			style="align: right;" />
+	</hlayout>
+</window>

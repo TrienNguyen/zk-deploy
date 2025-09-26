@@ -1,0 +1,41 @@
+<?page title="Bài 5"?>
+<window id="windowMaster" border="normal" apply="main.Unit5"
+	width="100%" style="background-color:#B9D3EE;">
+	<style>
+		.textbox_cust{ text-align:center; font-size: 50px; font-weight:
+		bold; } 
+		.label_cust{ text-align:center; font-size: 35px;
+		font-weight: bold; }
+	</style>
+	<separator height="10px" />
+	<label value="0		1		2		3		4		5		6		7		8		9		10" 
+	sclass="label_cust" width="100%" />
+	<separator height="10px" />
+	<hlayout>
+		<button id="btnPic1" label="Hình 1" iconSclass="z-icon-camera"
+			width="100px" />
+		<button id="btnPic2" label="Hình 2" iconSclass="z-icon-camera"
+			width="100px" />
+		<button id="btnPic3" label="Hình 3" iconSclass="z-icon-camera"
+			width="100px" />
+		<button id="btnPic4" label="Hình 4" iconSclass="z-icon-camera"
+			width="100px" />
+	</hlayout>
+	<separator height="10px" />
+	<div style="text-align:center;" width="400px">
+		<div width="400px">
+			<image src="/image/sosanh1.png" id="image" />
+		</div>
+		<div style="text-align:center;" width="400px">
+			<intbox id="intNum1" width="70px" height="70px"
+				style="font-size:50px;font-weight:bold;text-align:center;" />
+			<textbox id="txtSoSanh" width="70px" height="70px"
+				style="font-size:50px;font-weight:bold;text-align:center;" />
+			<intbox id="intNum2" width="70px" height="70px"
+				style="font-size:50px;font-weight:bold;text-align:center;" />
+		</div>
+	</div>
+	<separator height="10px" />
+	<button id="btnMain" label="Trang chủ" iconSclass="z-icon-home"
+		style="align: right;" />
+</window>

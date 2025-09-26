@@ -1,0 +1,99 @@
+<?page title="Bài 7"?>
+<window id="windowMaster" title="Đếm số lớn hơn, bé hơn, bằng nhau." border="normal" width="100%"
+	apply="main.Unit7" style="background-color:#B9D3EE;">
+	<style>
+		.z-textbox[readonly]{ text-align:center; font-size: 35px;
+		font-weight: bold; background: #00FFCC}
+
+		.label_cust{ text-align:center; font-size: 35px; font-weight:
+		bold; }
+
+		.button_cust{ text-align:center; font-size: 30px; font-weight:
+		bold;}
+
+	</style>
+	<separator height="10px" />
+	<label value="0		1		2		3		4		5		6		7		8		9		10" sclass="label_cust"
+		width="100%" />
+	<separator height="10px" />
+	<div>
+		<radiogroup>
+			<radio id="rdLonHon" label="Đếm số lớn hơn." checked="true" />
+			<radio id="rdBeHon" label="Đếm số bé hơn." />
+			<radio id="rdBang" label="Đếm số bằng nhau." />
+		</radiogroup>
+	</div>
+	<separator height="10px" />
+	<div width="100%" style="text-align:center;">
+		<hlayout>
+			<textbox id="txtNum0" width="60px" height="60px"
+				readonly="true" />
+			<textbox id="txtNum1" width="60px" height="60px"
+				readonly="true" />
+			<textbox id="txtNum2" width="60px" height="60px"
+				readonly="true" />
+			<textbox id="txtNum3" width="60px" height="60px"
+				readonly="true" />
+			<textbox id="txtNum4" width="60px" height="60px"
+				readonly="true" />
+			<textbox id="txtNum5" width="60px" height="60px"
+				readonly="true" />
+			<textbox id="txtNum6" width="60px" height="60px"
+				readonly="true" />
+			<textbox id="txtNum7" width="60px" height="60px"
+				readonly="true" />
+			<textbox id="txtNum8" width="60px" height="60px"
+				readonly="true" />
+			<textbox id="txtNum9" width="60px" height="60px"
+				readonly="true" />
+		</hlayout>
+	</div>
+	<separator height="10px" />
+	<div style="padding-left: 20px;">
+		<vlayout style="text-align: center;">
+			<label id="lbDem" width="35px" height="35px"
+				style="font-size: 25px; font-weight: bold; " />
+			<textbox id="txtDem" width="50px" height="50px"
+				style="font-size: 40px; font-weight: bold; background: #CC99FF;text-align: center;"
+				readonly="true"/>
+		</vlayout>
+	</div>
+	<separator height="15px" />
+	<div width="100%" style="text-align:center;">
+		<vlayout>
+			<hlayout>
+				<button width="45px" height="45px" label="0"
+					sclass="button_cust" id="btn0" />
+				<button width="45px" height="45px" label="1"
+					sclass="button_cust" id="btn1" />
+				<button width="45px" height="45px" label="2"
+					sclass="button_cust" id="btn2" />
+				<button width="45px" height="45px" label="3"
+					sclass="button_cust" id="btn3" />
+				<button width="45px" height="45px" label="4"
+					sclass="button_cust" id="btn4" />
+			</hlayout>
+			<hlayout>
+				<button width="45px" height="45px" label="5"
+					sclass="button_cust" id="btn5" />
+				<button width="45px" height="45px" label="6"
+					sclass="button_cust" id="btn6" />
+				<button width="45px" height="45px" label="7"
+					sclass="button_cust" id="btn7" />
+				<button width="45px" height="45px" label="8"
+					sclass="button_cust" id="btn8" />
+				<button width="45px" height="45px" label="9"
+					sclass="button_cust" id="btn9" />
+			</hlayout>
+		</vlayout>
+	</div>
+	<separator height="10px" />
+	<button id="btnKiemaTra" label="Kiểm tra" />
+	<separator height="10px" />
+	<hlayout>
+		<button id="btnReset" label="Làm lại"
+			iconSclass="z-icon-repeat" />
+		<button id="btnMain" label="Trang chủ" iconSclass="z-icon-home"
+			style="align: right;" />
+	</hlayout>
+</window>
